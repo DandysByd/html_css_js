@@ -1,10 +1,12 @@
 $buttonColor: rgb(32, 102, 106);
 $textColor: rgb(182, 182, 182);
+
 @for $i from 1 through 6 {
     h#{$i} {
         text-transform: uppercase;
     }
 }
+
 @mixin flexAICenter() {
     display: flex;
     align-items: center;

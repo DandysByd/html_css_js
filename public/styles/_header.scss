@@ -19,17 +19,18 @@
     text-decoration: none;
     list-style-type: none;
     margin: 1%
-    
 }
 
 .item-link {
     color: $textColor;
     text-transform: uppercase;
 }
-.active{
-    color:  rgb(141, 110, 110);;
+
+.active {
+    color: rgb(141, 110, 110);
+    ;
 }
 
-footer{
+footer {
     margin-top: 10%;
 }
