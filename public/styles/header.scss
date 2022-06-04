@@ -1,4 +1,4 @@
-
+$textColor: rgb(182, 182, 182);
 .header {
     width: 100%;
     font-weight: 200;
@@ -18,8 +18,13 @@
     text-decoration: none;
     list-style-type: none;
     margin: 1%
+    
 }
 
 .item-link {
+    color: $textColor;
     text-transform: uppercase;
+}
+.active{
+    color:  rgb(141, 110, 110);;
 }

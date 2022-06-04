@@ -7,27 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../scripts/main.js" defer></script>
     <title>Bydzovsky</title>
+
+    
+    <script type="text/javascript">
+        function redirect(page) {    
+       window.location=page
+        }
+    </script>
+
 </head>
 
 <body>
     <header class="header">
 
         <ul class="items-holder">
-            <li class="menu-item"><a class="item-link">Home</a></li>
-            <li class="menu-item"><a class="item-link">About me</a></li>
-            <li class="menu-item"><a class="item-link">My work</a></li>
+            <li class="menu-item"><a href="" class="item-link">Home</a></li>
+            <li id="about-me" class="menu-item"><a href="aboutMe.html" class="item-link">About me</a></li>
+            <li class="menu-item"><a href="#myDiv" class="item-link">My work</a></li>
         </ul>
     </header>
 
+    <div id="header"></div>
     <div class="content-wrapper">
         <div class="content-wrapper-alignment">
             <section class="about-me-section">
                 <div class="text-content">
                     <h1>Daniel Bydžovský</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum vitae ut eaque ex dolor optio
-                        illum, asperiores officiis iusto ipsam, sunt consequuntur quidem doloremque suscipit soluta cum?
-                        Sed, eum ad?</p>
-                    <button>
+                    <p>I am starting frontend developer with main focus on JS, CSS, HTML and lately all my free time is
+                        invested in learning React JS. In the past I also worked with Python, PHP and C#. My hobbies is
+                        electronics (currently working on remote controll skateboard), football and ofcourse coding.
+                    </p>
+                    <button id="about-me" onclick="redirect('./aboutMe.html')">
                         <h6>Learn more</h6>
                     </button>
                 </div>
@@ -35,12 +45,12 @@
                     <img class="my-image" alt="myImage" src="../img/img.jpg" />
                 </div>
             </section>
-            <section class="my-work-section">
+            <section id="myDiv" class="my-work-section">
                 <h2>What I did</h2>
                 <div class="my-work-showcase">
                     <div class="single-project-wrapper">
                         <a target="_blank" href="https://dandysbyd.github.io/bydza-beardies/">
-                            <img src="../img/img.jpg" alt="bbeardies">
+                            <img src="../img/chilli.jpg" alt="bbeardies">
                             <div class="text-values">
                                 <h3>Bydza beardies</h3>
                                 <p>I am lover of bearded dragons, so I created myself website as a medium for selling
@@ -51,20 +61,22 @@
                     </div>
                     <div class="single-project-wrapper">
                         <a target="_blank" href="https://dandysbyd.github.io/create-terra/">
-                            <img src="../img/img.jpg" alt="bbeardies">
+                            <img src="../img/create-terra.png" alt="bbeardies">
                             <div class="text-values">
                                 <h3>Create terra</h3>
-                                <p>In my career of reptile keeper I built many terrariums and this site was created for making designing easier. (WIP)
+                                <p>In my career of reptile keeper I built many terrariums and this site was created for
+                                    making designing easier. (WIP)
                                 </p>
                             </div>
                         </a>
                     </div>
                     <div class="single-project-wrapper">
                         <a href="#">
-                            <img src="../img/img.jpg" alt="bbeardies">
+                            <img src="../img/alexa.webp" alt="bbeardies">
                             <div class="text-values">
                                 <h3>Homemade Alexa</h3>
-                                <p>Project I am probably most proud of - fake Alexa. Sadly my 'Falexa' passed away together with my disk.
+                                <p>Project I am probably most proud of - fake Alexa. Sadly my 'Falexa' passed away
+                                    together with my disk.
                                 </p>
                             </div>
                         </a>
