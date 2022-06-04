@@ -1,0 +1,25 @@
+
+.header {
+    width: 100%;
+    font-weight: 200;
+    font-size: 20px;
+    background-color: rgb(19, 65, 72);
+    display: flex;
+    justify-content: center;
+}
+
+.items-holder {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-item {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 1%
+}
+
+.item-link {
+    text-transform: uppercase;
+}
