@@ -1,4 +1,5 @@
-$textColor: rgb(182, 182, 182);
+@import './variables.scss';
+
 .header {
     width: 100%;
     font-weight: 200;
@@ -27,4 +28,8 @@ $textColor: rgb(182, 182, 182);
 }
 .active{
     color:  rgb(141, 110, 110);;
+}
+
+footer{
+    margin-top: 10%;
 }

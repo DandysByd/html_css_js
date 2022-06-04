@@ -1,0 +1,74 @@
+@import './variables.scss';
+@import './body.scss','./aboutMe.scss','./media.scss','./header.scss';
+
+.text-content {
+    button {
+        background-color: $buttonColor;
+        border: none;
+        color: $textColor;
+        width: 50%;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+
+.my-image {
+    width: 55%;
+}
+
+.about-me-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-content {
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image-content {
+    width: 60%;
+    justify-content: flex-end;
+    @include flexAICenter();
+}
+
+.text-values {
+    width: 100%;
+    margin: 0px 10px 0px 10px;
+
+    h3,
+    p {
+        width: 90%;
+    }
+}
+
+.my-work-showcase {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .single-project-wrapper {
+        background-color: $buttonColor;
+        width: 31%;
+        aspect-ratio: 1/1;
+
+        a {
+            text-decoration: none;
+
+            &:visited {
+                color: $textColor;
+            }
+        }
+
+
+        img {
+            height: 60%;
+            width: 100%;
+        }
+    }
+}

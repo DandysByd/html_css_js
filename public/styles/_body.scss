@@ -1,0 +1,29 @@
+@import './variables.scss';
+
+body {
+    height: 100%;
+    margin-top: 0px;
+    color:  $textColor;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    background-color: rgb(61, 63, 65);
+    @include flexAICenter();
+    flex-direction: column;
+}
+.content-wrapper {
+    width: 100%;
+    height: 100%;
+    @include flexAICenter();
+    justify-content: center;
+}
+.content-wrapper-alignment {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    section{
+        margin-top: 20%;
+        height: 30%;
+    }
+}
+

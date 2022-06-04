@@ -22,6 +22,30 @@ h6 {
   text-transform: uppercase;
 }
 
+h1 {
+  text-transform: uppercase;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+h5 {
+  text-transform: uppercase;
+}
+
+h6 {
+  text-transform: uppercase;
+}
+
 body {
   height: 100%;
   margin-top: 0px;
@@ -30,8 +54,8 @@ body {
   font-weight: 600;
   background-color: rgb(61, 63, 65);
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 
 .content-wrapper {
@@ -40,26 +64,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.text-content button {
-  background-color: rgb(32, 102, 106);
-  border: none;
-  color: rgb(182, 182, 182);
-  width: 50%;
-  text-align: center;
-  text-decoration: none;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.my-image {
-  width: 55%;
-}
-
-.about-me-section {
-  display: flex;
-  justify-content: space-between;
 }
 
 .content-wrapper-alignment {
@@ -73,53 +77,119 @@ body {
   height: 30%;
 }
 
-.text-content {
-  width: 40%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
+h1 {
+  text-transform: uppercase;
 }
 
-.image-content {
-  width: 60%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+h2 {
+  text-transform: uppercase;
 }
 
-.text-values {
-  width: 100%;
-  margin: 0px 10px 0px 10px;
-}
-.text-values h3, .text-values p {
-  width: 90%;
+h3 {
+  text-transform: uppercase;
 }
 
-.my-work-showcase {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.my-work-showcase .single-project-wrapper {
-  background-color: rgb(32, 102, 106);
-  width: 31%;
-  aspect-ratio: 1/1;
-}
-.my-work-showcase .single-project-wrapper a {
-  text-decoration: none;
-}
-.my-work-showcase .single-project-wrapper a:visited {
-  color: rgb(182, 182, 182);
-}
-.my-work-showcase .single-project-wrapper img {
-  height: 60%;
-  width: 100%;
+h4 {
+  text-transform: uppercase;
 }
 
-footer {
-  margin-top: 10%;
+h5 {
+  text-transform: uppercase;
 }
+
+h6 {
+  text-transform: uppercase;
+}
+
+.items-holder {
+  color: gray !important;
+}
+
+.content-wrapper li {
+  margin-bottom: 2%;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+h5 {
+  text-transform: uppercase;
+}
+
+h6 {
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+  header .items-holder {
+    width: 100%;
+    justify-content: center;
+    padding: 0px;
+  }
+  .content-wrapper-alignment {
+    width: 80%;
+  }
+  .content-wrapper-alignment .about-me-section {
+    flex-direction: column;
+  }
+  .content-wrapper-alignment .about-me-section .text-content {
+    width: 100%;
+  }
+  .content-wrapper-alignment .about-me-section .text-content button {
+    width: 100%;
+  }
+  .content-wrapper-alignment .about-me-section .image-content {
+    display: none;
+  }
+  .content-wrapper-alignment .my-work-showcase {
+    flex-direction: column;
+  }
+  .content-wrapper-alignment .my-work-showcase .single-project-wrapper {
+    aspect-ratio: auto;
+    width: 100%;
+    margin-bottom: 8%;
+  }
+  .my-skillset table {
+    width: 100%;
+  }
+}
+h1 {
+  text-transform: uppercase;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+h5 {
+  text-transform: uppercase;
+}
+
+h6 {
+  text-transform: uppercase;
+}
+
 .header {
   width: 100%;
   font-weight: 200;
@@ -149,8 +219,74 @@ footer {
 .active {
   color: rgb(141, 110, 110);
 }
-.items-holder {
-  color: gray !important;
+
+footer {
+  margin-top: 10%;
+}
+
+.text-content button {
+  background-color: rgb(32, 102, 106);
+  border: none;
+  color: rgb(182, 182, 182);
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.my-image {
+  width: 55%;
+}
+
+.about-me-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-content {
+  width: 40%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.image-content {
+  width: 60%;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+
+.text-values {
+  width: 100%;
+  margin: 0px 10px 0px 10px;
+}
+.text-values h3,
+.text-values p {
+  width: 90%;
+}
+
+.my-work-showcase {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.my-work-showcase .single-project-wrapper {
+  background-color: rgb(32, 102, 106);
+  width: 31%;
+  aspect-ratio: 1/1;
+}
+.my-work-showcase .single-project-wrapper a {
+  text-decoration: none;
+}
+.my-work-showcase .single-project-wrapper a:visited {
+  color: rgb(182, 182, 182);
+}
+.my-work-showcase .single-project-wrapper img {
+  height: 60%;
+  width: 100%;
 }
 
 
