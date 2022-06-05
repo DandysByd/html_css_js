@@ -11,21 +11,28 @@ body {
     flex-direction: column;
 }
 
-.content-wrapper {
+.content {
     width: 100%;
     height: 100%;
     @include flexAICenter();
     justify-content: center;
+    &__wrapper {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__table{
+        width: 100%;
+        
+    }
 }
 
-.content-wrapper-alignment {
-    width: 55%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    section {
-        margin-top: 20%;
-        height: 30%;
-    }
+.content__part {
+    margin-top: 20%;
+    height: 30%;
+}
+.work-section {
+    margin-top: 20%;
+    height: 30%;
 }

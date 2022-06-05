@@ -1,9 +1,11 @@
 @import './variables.scss';
 
-.items-holder {
-    color: gray !important;
-}
-
-.content-wrapper li {
-    margin-bottom: 2%;
+.content {
+    &__article{
+        margin-bottom: 2%;
+    }
+    &__section{
+        margin-top: 20%;
+        height: 30%;
+    }
 }

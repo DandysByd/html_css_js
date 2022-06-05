@@ -1,34 +1,33 @@
 @import './variables.scss';
 
-.header {
+.nav {
     width: 100%;
     font-weight: 200;
     font-size: 20px;
     background-color: rgb(19, 65, 72);
     display: flex;
     justify-content: center;
-}
-
-.items-holder {
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.menu-item {
-    text-decoration: none;
-    list-style-type: none;
-    margin: 1%
-}
-
-.item-link {
-    color: $textColor;
-    text-transform: uppercase;
+    
+    &__list {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    &__item {
+        text-decoration: none;
+        list-style-type: none;
+        margin: 1%
+    }
+    
+    &__link {
+        color: $textColor;
+        text-transform: uppercase;
+    }
 }
 
 .active {
     color: rgb(141, 110, 110);
-    ;
 }
 
 footer {

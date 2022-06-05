@@ -12,30 +12,30 @@
 </head>
 
 <body>
-    <header class="header">
-        <ul class="items-holder">
-            <li class="menu-item"><a href="./" class="item-link">Home</a></li>
-            <li id="about-me" class="menu-item .active"><a href="./aboutMe.html" class="item-link">About me</a></li>
-            <li class="menu-item"><a href="./ #myDiv" class="item-link">My work</a></li>
+    <header class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="./" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="./aboutMe.html" class="nav__link">About me</a></li>
+            <li class="nav__item"><a href="./ #myDiv" class="nav__link">My work</a></li>
         </ul>
     </header>
 
-    <div class="content-wrapper">
-        <div class="content-wrapper-alignment">
-            <section class="about-me">
-                <h2>Something about me</h2>
-                <ul>
-                    <li>I am starting frontend developer with main focus on JS, CSS, HTML and lately all my free time is
+    <div class="content">
+        <div class="content__wrapper">
+            <section class="content__section">
+                <h2 class="content__header">Something about me</h2>
+                <ul class="content__list">
+                    <li class="content__article">I am starting frontend developer with main focus on JS, CSS, HTML and lately all my free time is
                         invested in learning React JS. In the past I also worked with Python, PHP and C#. My hobbies are
                         electronics (currently working on remote controll skateboard), football and ofcourse coding.
                     </li>
-                    <li>Currently I am looking for entry job I can show my skills in and where I can keep growing and
+                    <li class="content__article">Currently I am looking for entry job I can show my skills in and where I can keep growing and
                         developing my knowledge. </li>
                 </ul>
             </section>
-            <section class="my-skillset">
-                <h2>My skillset</h2>
-                <table>
+            <section class="content__section">
+                <h2 class="content__header">My skillset</h2>
+                <table class="content__table">
                     <tr>
                         <td>HTML</td>
                         <td>9</td>
@@ -71,21 +71,21 @@
 
                 </table>
             </section>
-            <section class="my-tools">
-                <h2>Tools I am usingTools I am using</h2>
-                <ul>
-                    <li>Currently I am using VS code. In highschool we were forced to work in NetBeans, but right after,
+            <section class="content__section">
+                <h2 class="content__header">Tools I am usingTools I am using</h2>
+                <ul class="content__list">
+                    <li class="content__article">Currently I am using VS code. In highschool we were forced to work in NetBeans, but right after,
                         when
                         IDE was free choice I started working in atom and even tried Intelij. VS code was the best
                         choice for me thanks to packages, that can be installed.</li>
-                    <li>Only experience with different OS than Windows was in high school. In some classes we were
+                    <li class="content__article">Only experience with different OS than Windows was in high school. In some classes we were
                         supposed to work with Ubuntu, but it really didn't match my expectations and I just couldnt get
                         used to different OS, than the one I was "working" with my entire life.</li>
                 </ul>
             </section>
         </div>
     </div>
-    <footer>© Daniel Bydžovský 2022</footer>
+    <footer class="footer">© Daniel Bydžovský 2022</footer>
 </body>
 
 </html>

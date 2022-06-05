@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel public/sites/index.html",
+    "start": "parcel public/sites/index.html",
     "build": "parcel build public/sites/index.html"
   },
   "author": "",

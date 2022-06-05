@@ -1,8 +1,19 @@
 @import './variables.scss';
 @import './body.scss', './aboutMe.scss', './media.scss', './header.scss';
 
-.text-content {
-    button {
+.content{
+    &__part{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.article{
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    &__button {
         background-color: $buttonColor;
         border: none;
         color: $textColor;
@@ -14,61 +25,50 @@
     }
 }
 
-.my-image {
-    width: 55%;
-}
 
-.about-me-section {
-    display: flex;
-    justify-content: space-between;
-}
 
-.text-content {
-    width: 40%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.image-content {
+.personal-image {
     width: 60%;
     justify-content: flex-end;
     @include flexAICenter();
+    &__image {
+        width: 85%;
+    }
 }
 
-.text-values {
+.article {
     width: 100%;
     margin: 0px 10px 0px 10px;
 
-    h3,
-    p {
+    &__header, &__paragraph{
         width: 90%;
     }
 }
-
-.my-work-showcase {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-
-    .single-project-wrapper {
-        background-color: $buttonColor;
-        width: 31%;
-        aspect-ratio: 1/1;
-
-        a {
-            text-decoration: none;
-
-            &:visited {
-                color: $textColor;
-            }
-        }
-
-
-        img {
-            height: 60%;
-            width: 100%;
-        }
+.work-section{
+    &__showcase {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
 }
+.project{
+    background-color: $buttonColor;
+    width: 31%;
+    overflow: hidden;
+    &__link{
+        text-decoration: none;
+        &:visited {
+            color: $textColor;
+        }
+    }
+    &__image {
+        height: 50%;
+        width: 100%;
+    }
+    &__values{
+        width: 90%;
+        margin: 0% 5% 0% 5%;
+    }
+}
+
+   

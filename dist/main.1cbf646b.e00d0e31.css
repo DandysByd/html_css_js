@@ -58,21 +58,29 @@ body {
   flex-direction: column;
 }
 
-.content-wrapper {
+.content {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.content-wrapper-alignment {
+.content__wrapper {
   width: 55%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.content-wrapper-alignment section {
+.content__table {
+  width: 100%;
+}
+
+.content__part {
+  margin-top: 20%;
+  height: 30%;
+}
+
+.work-section {
   margin-top: 20%;
   height: 30%;
 }
@@ -101,12 +109,12 @@ h6 {
   text-transform: uppercase;
 }
 
-.items-holder {
-  color: gray !important;
-}
-
-.content-wrapper li {
+.content__article {
   margin-bottom: 2%;
+}
+.content__section {
+  margin-top: 20%;
+  height: 30%;
 }
 
 h1 {
@@ -134,35 +142,39 @@ h6 {
 }
 
 @media only screen and (max-width: 768px) {
-  header .items-holder {
-    width: 100%;
-    justify-content: center;
-    padding: 0px;
+  .nav__list {
+    justify-content: center !important;
+    padding: 0px !important;
+    width: 100% !important;
   }
-  .content-wrapper-alignment {
+  .content__wrapper {
     width: 80%;
   }
-  .content-wrapper-alignment .about-me-section {
+  .article {
     flex-direction: column;
   }
-  .content-wrapper-alignment .about-me-section .text-content {
+  .article__paragraph {
     width: 100%;
   }
-  .content-wrapper-alignment .about-me-section .text-content button {
-    width: 100%;
+  .article__button {
+    width: 100% !important;
   }
-  .content-wrapper-alignment .about-me-section .image-content {
-    display: none;
+  .personal-image {
+    display: none !important;
   }
-  .content-wrapper-alignment .my-work-showcase {
+  .work-section__showcase {
     flex-direction: column;
   }
-  .content-wrapper-alignment .my-work-showcase .single-project-wrapper {
-    aspect-ratio: auto;
-    width: 100%;
-    margin-bottom: 8%;
+  .project {
+    aspect-ratio: auto !important;
+    width: 100% !important;
+    margin-bottom: 8% !important;
   }
-  .my-skillset table {
+  .project__values {
+    width: 90%;
+    margin: 0% 5% 0% 5%;
+  }
+  .content__table {
     width: 100%;
   }
 }
@@ -190,7 +202,7 @@ h6 {
   text-transform: uppercase;
 }
 
-.header {
+.nav {
   width: 100%;
   font-weight: 200;
   font-size: 20px;
@@ -198,20 +210,17 @@ h6 {
   display: flex;
   justify-content: center;
 }
-
-.items-holder {
+.nav__list {
   width: 50%;
   display: flex;
   justify-content: flex-end;
 }
-
-.menu-item {
+.nav__item {
   text-decoration: none;
   list-style-type: none;
   margin: 1%;
 }
-
-.item-link {
+.nav__link {
   color: rgb(182, 182, 182);
   text-transform: uppercase;
 }
@@ -224,7 +233,19 @@ footer {
   margin-top: 10%;
 }
 
-.text-content button {
+.content__part {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article {
+  width: 40%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.article__button {
   background-color: rgb(32, 102, 106);
   border: none;
   color: rgb(182, 182, 182);
@@ -235,58 +256,48 @@ footer {
   cursor: pointer;
 }
 
-.my-image {
-  width: 55%;
-}
-
-.about-me-section {
-  display: flex;
-  justify-content: space-between;
-}
-
-.text-content {
-  width: 40%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.image-content {
+.personal-image {
   width: 60%;
   justify-content: flex-end;
   display: flex;
   align-items: center;
 }
+.personal-image__image {
+  width: 85%;
+}
 
-.text-values {
+.article {
   width: 100%;
   margin: 0px 10px 0px 10px;
 }
-.text-values h3,
-.text-values p {
+.article__header, .article__paragraph {
   width: 90%;
 }
 
-.my-work-showcase {
+.work-section__showcase {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.my-work-showcase .single-project-wrapper {
+
+.project {
   background-color: rgb(32, 102, 106);
   width: 31%;
-  aspect-ratio: 1/1;
+  overflow: hidden;
 }
-.my-work-showcase .single-project-wrapper a {
+.project__link {
   text-decoration: none;
 }
-.my-work-showcase .single-project-wrapper a:visited {
+.project__link:visited {
   color: rgb(182, 182, 182);
 }
-.my-work-showcase .single-project-wrapper img {
-  height: 60%;
+.project__image {
+  height: 50%;
   width: 100%;
+}
+.project__values {
+  width: 90%;
+  margin: 0% 5% 0% 5%;
 }
 
 
