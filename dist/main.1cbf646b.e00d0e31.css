@@ -74,15 +74,71 @@ body {
 .content__table {
   width: 100%;
 }
-
 .content__part {
-  margin-top: 20%;
-  height: 30%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.work-section {
-  margin-top: 20%;
-  height: 30%;
+.article {
+  width: 40%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.article__button {
+  background-color: rgb(32, 102, 106);
+  border: none;
+  color: rgb(182, 182, 182);
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.personal-image {
+  width: 60%;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+.personal-image__image {
+  width: 85%;
+}
+
+.article {
+  width: 100%;
+  margin: 0px 10px 0px 10px;
+}
+.article__header, .article__paragraph {
+  width: 90%;
+}
+
+.work-section__showcase {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project {
+  background-color: rgb(32, 102, 106);
+  width: 31%;
+  overflow: hidden;
+}
+.project__link {
+  text-decoration: none;
+}
+.project__link:visited {
+  color: rgb(182, 182, 182);
+}
+.project__image {
+  height: 50%;
+  width: 100%;
+}
+.project__values {
+  width: 90%;
+  margin: 0% 5% 0% 5%;
 }
 
 h1 {
@@ -113,6 +169,16 @@ h6 {
   margin-bottom: 2%;
 }
 .content__section {
+  margin-top: 20%;
+  height: 30%;
+}
+
+.content__part {
+  margin-top: 20%;
+  height: 30%;
+}
+
+.work-section {
   margin-top: 20%;
   height: 30%;
 }
@@ -231,73 +297,6 @@ h6 {
 
 footer {
   margin-top: 10%;
-}
-
-.content__part {
-  display: flex;
-  justify-content: space-between;
-}
-
-.article {
-  width: 40%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-}
-.article__button {
-  background-color: rgb(32, 102, 106);
-  border: none;
-  color: rgb(182, 182, 182);
-  width: 50%;
-  text-align: center;
-  text-decoration: none;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.personal-image {
-  width: 60%;
-  justify-content: flex-end;
-  display: flex;
-  align-items: center;
-}
-.personal-image__image {
-  width: 85%;
-}
-
-.article {
-  width: 100%;
-  margin: 0px 10px 0px 10px;
-}
-.article__header, .article__paragraph {
-  width: 90%;
-}
-
-.work-section__showcase {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.project {
-  background-color: rgb(32, 102, 106);
-  width: 31%;
-  overflow: hidden;
-}
-.project__link {
-  text-decoration: none;
-}
-.project__link:visited {
-  color: rgb(182, 182, 182);
-}
-.project__image {
-  height: 50%;
-  width: 100%;
-}
-.project__values {
-  width: 90%;
-  margin: 0% 5% 0% 5%;
 }
 
 

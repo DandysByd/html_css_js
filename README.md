@@ -9,3 +9,4 @@ To run this project on your local server follow steps below-
 3 - Use npm install
 4 - Use npm start
 
+Used naming system - BEM
